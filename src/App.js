@@ -1,14 +1,13 @@
-import "./App.css";
-import Header from "./components/Header";
-import WaterList from "./components/WaterList";
-import FeedList from "./components/FeedList";
+import Header from "./components/header";
+import Home from "./home";
+//import WaterList from "./components/WaterList";
+//import FeedList from "./components/FeedList";
 
-const App = () => {
-  <div>
+const App = () => (
+  <div className="app-main">
     <Header />
-    <WaterList />
-    <FeedList />
-  </div>;
-};
+    <Home />
+  </div>
+);
 
 export default App;
