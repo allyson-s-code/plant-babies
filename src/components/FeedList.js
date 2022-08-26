@@ -1,9 +1,9 @@
 import React from "react";
-import Plant from "./Plant";
+import Plant from "./plant";
 
 const FeedList = () => (
   <div className="feed-list">
-    <h1>Feed Me!</h1>
+    <h2>Feed Me!</h2>
     <ul className="feed-list__plants">
       <Plant />
       <Plant />

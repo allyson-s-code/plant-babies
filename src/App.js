@@ -1,12 +1,14 @@
 import Header from "./components/header";
-import Home from "./home";
-//import WaterList from "./components/WaterList";
-//import FeedList from "./components/FeedList";
+import Home from "./pages/home";
+import FeedList from "./components/feedList";
+import WaterList from "./components/waterList";
 
 const App = () => (
   <div className="app-main">
     <Header />
     <Home />
+    <WaterList />
+    <FeedList />
   </div>
 );
 

@@ -28,17 +28,21 @@ Global Styles
 body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
+  color: var(--main-text-color);
   background-color: var(--main-bg-color);
   height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -48,6 +52,12 @@ button {
   padding: 0;
   border: none;
   background: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 h1 {
@@ -61,7 +71,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .app-main {
@@ -85,7 +95,7 @@ Header Styles
   justify-content: center;
   align-items: center;
   background: var(--main-bg-color);
-  padding-top: 20px;
+  padding-top: 2em;
 }
 
 .app-header__title {
@@ -95,7 +105,7 @@ Header Styles
 
 /*
 =============== 
-Home Styles
+Home Section Styles
 ===============
 */
 
@@ -106,7 +116,7 @@ Home Styles
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin: 5em 0;
 }
 
 .home__img-wrapper {
@@ -121,16 +131,93 @@ Home Styles
   height: auto;
 }
 
+.home__heading {
+  color: var(--main-heading-color);
+  margin-top: 3em;
+}
+
+.home__heading span {
+  font-family: var(--header-font);
+}
+
 .home__btn {
   background-color: var(--main-btn-color);
   color: white;
-  margin-top: 75px;
+  margin-top: 2em;
   width: 175px;
   height: 50px;
   border-radius: 20px;
   letter-spacing: 0.1rem;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+/*
+=============== 
+Care Section Styles
+===============
+*/
+.care-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+.care__list-wrapper {
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+}
+
+.water-list,
+.feed-list {
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3rem 0;
+  margin: 1rem;
+}
+
+.water-list__plants,
+.feed-list__plants {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.water-list h2,
+.feed-list h2 {
+  color: var(--main-heading-color);
+}
+
+.plant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.plant__img-wrapper {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.plant__img {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 800px) {
@@ -141,7 +228,7 @@ Global Styles
 */
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   h2 {
     font-size: 2.5rem;
