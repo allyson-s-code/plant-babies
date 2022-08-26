@@ -9,8 +9,8 @@ const Plant = () => (
         className="plant__img"
       />
     </div>
-    <h3 className="plant__name">Chinese Money Plant</h3>
-    <span className="plant__check">X</span>
+    <h3 className="plant__name">Money Plant</h3>
+    <span className="plant__check">x</span>
   </li>
 );
 
